@@ -25,7 +25,7 @@ export const createCheckoutSession = async (req: Request, res: Response, next: N
               name: "Speaker Premium Subscription",
               description: "Unlock all languages and AI features",
             },
-            unit_amount: 2000, // 20 UAH (in kopecks)
+            unit_amount: 9900, // 99 UAH (in kopecks)
           },
           quantity: 1,
         },
