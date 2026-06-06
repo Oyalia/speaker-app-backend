@@ -17,6 +17,7 @@ export const createCheckoutSession = async (req: Request, res: Response, next: N
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
+      locale: "uk", // Force Ukrainian language on checkout
       line_items: [
         {
           price_data: {
